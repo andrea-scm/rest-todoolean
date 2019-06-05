@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lista delle cose da fare</h1>
+      <input type="text" id = "to-add-input" placeholder="Inserisci qualcosa da fare">
+      <button type="button" id = "to-add-button">Aggiungi alla lista!</button>
+      <div class="to-do">
+      </div>
+    </div>
+
+
+
+
+  <script id="template" type="text/x-handlebars-template">
+    <ul class = "to-do-list">
+      <li data-id = "{{id}}"> {{text}} <span><i title="Modifica elemento" class="fas fa-pen"></i><i title="Elimina elemento" class="fas fa-trash-alt"></i></span> <input class = "to-edit-input fontAwesome" type="text" placeholder="Modifica elemento &#xf3e5;"> <span class = "element-list-state">Elemento modificato!</span> </li>
+    </ul>
+  </script>
+  <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

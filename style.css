@@ -1,0 +1,74 @@
+@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+.fontAwesome{
+  "font-family:'Font Awesome 5 Arrows' !important;
+}
+
+.container{
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+#to-add-input{
+  padding: 5px;
+  width: 250px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+#to-add-button{
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.to-do{
+  width: 40%;
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%);
+}
+
+li{
+  text-align: left;
+  line-height: 25px;
+  position: relative;
+}
+
+i{
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.element-list-state{
+  position: absolute;
+  margin-left: 10px;
+  color: red;
+}
+
+.to-edit-input{
+  display: none;
+}
+
+.to-edit-input.active{
+  display: inline-block;
+  padding: 3px;
+}
+
+.element-list-state{
+  display: none
+}
